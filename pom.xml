@@ -1,0 +1,36 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.dev-pro.app</groupId>
+  <artifactId>simple_java</artifactId>
+  <version>1</version>
+
+<properties>
+    <mavenVersion>2.1</mavenVersion>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-artifact</artifactId>
+      <version>${mavenVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-project</artifactId>
+      <version>${mavenVersion}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <directory>/dev-pro/homework_jenkins/simple_java</directory>
+    <finalName>${artifactId}-${version}</finalName>
+    <testOutputDirectory>test/results</testOutputDirectory>
+    <sourceDirectory>src</sourceDirectory>
+    <testSourceDirectory>test</testSourceDirectory>
+    <testResources>
+      <testResource>
+        <directory>test</directory>
+      </testResource>
+    </testResources>
+  </build>
+
+</project>
