@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.fail;
 
-public class hellotest {
+public class HelloTest {
 
     @Test
     public void testNothing() {
